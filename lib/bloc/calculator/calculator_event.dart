@@ -14,3 +14,16 @@ class AddNumber extends CalculatorEvent{
 
   AddNumber(this.number);
 }
+
+class ChangeNumberSign extends CalculatorEvent{}
+
+class DeleteLastEntry extends CalculatorEvent{}
+
+class OperationEntry extends CalculatorEvent{
+  final String operation;
+
+  OperationEntry(this.operation);
+}
+
+class CalculateResult extends CalculatorEvent{}
+
